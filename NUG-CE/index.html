@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="some description about the slides">
+    <meta name="author" content="You">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background-color="#404136"><img src="img/logo.png"><br><span class="white">1º MEETUP NODEJS CEARÁ - NUG-CE</span></section>
+        <section data-background="#1976d2">
+          <h1>Static Generators</h1>
+          <h3>No Backend, No problem!</h3>
+        </section>
+        <section data-background-color="#fff">
+          <h1>Felipe Sousa</h1>
+          <p class="fragment">Front-End Developer</p>
+          <p class="fragment">Web e Mobile <3 </p>
+          <p class="fragment">Linux </p>
+        </section>
+        <section data-background="#1976d2">
+          <h1 class="white">Pra quê serve?</h1>
+        </section>
+        <section data-background-color="#1976d2">
+          <h1>Porquê de uma nova alternativa?</h1>
+        </section>
+        <section data-background-color="#1976d2">
+          <h1>Pra quem serve?</h1>
+        </section>
+        <section> 
+          <h2>O que são Static Generators</h2><i>Geradores estáticos usam várias funcionalidades que </i><i>estamos acostumados a utilizar, como includes, loopings, condições, etc.</i><i> Porém sem banco de dados, sem dependências server-side, </i><i>tudo é gerado para um HTML simples e puro.</i>
+        </section>
+        <section>
+          <section data-background-color="#1976d2">
+            <h1>Lógica de funcionamento</h1>
+          </section>
+          <section>
+            <ul>
+              <li class="fragment">
+                <h3>Arquivos de Configuração</h3>
+              </li>
+              <li class="fragment">
+                <h3>Templates</h3>
+              </li>
+              <li class="fragment">
+                <h3>Conteúdo / Artigos</h3>
+              </li>
+            </ul>
+          </section>
+          <section data-background-color="#1976d2">
+            <h2>Arquivos de Configuração</h2>
+          </section>
+          <section> 
+            <pre><code>title: "Your Title" 
+titleSecondary: "Your Description here..."
+author: "Fulano não sei das quantas" 
+language: "pt-BR"
+permalink: :year/:month/:title</code></pre><span>_config.yml</span>
+          </section>
+          <section data-background-color="#1976d2"> 
+            <h2>Templates</h2>
+          </section>
+          <section><img src="/img/article_blog.png"></section>
+          <section> <img src="/img/code.png" class="large-image"><br><span>article.ejs</span></section>
+          <section data-background-color="#1976d2"> 
+            <h2>Artigos</h2>
+          </section>
+          <section>
+            <pre><code>---
+title: "Como eu nasci"
+tags: ['nascimento', 'birth', 'eu', 'mae', 'pai']
+comments: true
+image: 'MinhaFotoDivando.jpg'
+---
+
+// body article</code></pre><span>name_article.md</span>
+          </section>
+        </section>
+        <section data-background="img/js.gif"></section>
+        <section>
+          <section>
+            <h3>Tipos de Static Generators</h3><img src="../img/octopress-logo.png"><br><span class="min fragment">www.staticgen.com</span>
+          </section>
+        </section>
+        <section data-background-transition="slide">
+          <section data-background="img/page-jekyll.png"></section>
+          <section data-background="img/page-spress.png"></section>
+          <section data-background="img/page-jbake.png"></section>
+          <section data-background="img/tedio.gif"></section>
+          <section data-background="img/page-pelican.png"></section>
+          <section data-background="img/page-hexo.png"></section>
+          <section data-background="img/caprio.gif"></section>
+        </section>
+        <section>
+          <section><img src="img/hexo-logo.svg">
+            <div style="font-family: 'lato';">
+              <p>A fast, simple & powerful blog framework.</p><span>hexo.io/</span>
+            </div>
+          </section>
+          <section data-background-color="#1976d2"> 
+            <h3>Características</h3>
+            <ul> 
+              <li class="fragment">NodeJS</li>
+              <li class="fragment">Open Source</li>
+              <li class="fragment">Responsivo</li>
+              <li class="fragment">Plugins</li>
+              <li class="fragment">Comentários</li>
+              <li class="fragment">Temas</li>
+              <li class="fragment">Grunt (GULP GANHA FÁCIL)</li>
+              <li class="fragment">Stylus <3</li>
+              <li class="fragment">...</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Estrutura</h3>
+            <pre><code>source/
+scaffolds/
+theme/
+-----scripts/
+-----layout/
+-----source/
+-----Gruntfile.js
+-----package.json
+-----_config.yml	
+package.json
+_config.yml </code></pre>
+          </section>
+          <section>
+            <pre><code>menu:
+- INICIO: /
+- SOBRE: /about
+- PROJETOS: /projects
+- ARTIGOS: /archives
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts</code></pre><span>theme/_config.yml</span>
+          </section>
+        </section>
+        <section>
+          <section data-background-color="#1976d2">
+            <h1>Plugins</h1>
+          </section>
+          <section>
+            <ul>
+              <li class="fragment">Sistema de busca</li>
+              <li class="fragment">Paineis de administração</li>
+              <li class="fragment">Feed</li>
+              <li class="fragment">Sitemap</li>
+              <li class="fragment">Mapas</li>
+              <li class="fragment">Deploy</li>
+              <li class="fragment">...</li>
+            </ul>
+          </section>
+          <section data-background-color="#1976d2">
+            <h1>Módulos</h1>
+          </section>
+          <section>
+            <ul>
+              <li class="fragment">UNCSS</li>
+              <li class="fragment">Livereload</li>
+              <li class="fragment">Imagemin</li>
+              <li class="fragment">Spotify/Deezer</li>
+              <li class="fragment">CoffeScript</li>
+              <li class="fragment">Less/SASS</li>
+              <li class="fragment">Jade</li>
+              <li class="fragment">...</li>
+            </ul>
+          </section>
+          <section data-background-color="#1976d2">
+            <h1>Deploy</h1>
+          </section>
+          <section>
+            <pre><code>deploy:
+	type: git
+	repo: https://github.com/username/repositoryName.git
+	branch: master</code></pre><span>_config.yml</span>
+          </section>
+        </section>
+        <section>
+          <section data-background="#1976d2">
+            <h3>Como começar?</h3>
+            <pre><code>$ npm install hexo-cli -g
+$ hexo init "Name"
+$ cd Name/
+$ [sudo] npm install
+$ hexo server</code></pre>
+          </section>
+          <section data-background-image="img/hexo.png"></section>
+          <section data-background="#1976d2">
+            <h3>Deploy</h3>
+            <pre><code>$ hexo generate
+$ hexo deploy</code></pre>
+          </section>
+        </section>
+        <section data-background="img/capitai.gif">
+          <h1 class="white">Perguntas?</h1>
+        </section>
+        <section data-background="/img/att.gif"></section>
+        <section> 
+          <section> 
+            <h1 class="fragment highlight-blue">@felipz_sousa</h1>
+            <h1 class="fragment highlight-green">/felipesousa</h1>
+            <h1 class="fragment highlight-red">felipesousa.github.io</h1>
+          </section>
+        </section>
+        <section data-background="img/bye.gif">
+          <h1 class="red">Até a próxima!</h1>
+        </section>
+      </div>
+    </div>
+    <script src="js/vendor/head.min.js"></script>
+    <script src="js/vendor/reveal.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
